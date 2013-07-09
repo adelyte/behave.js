@@ -39,7 +39,7 @@ Suite.prototype.addSpec = function (spec) {
 	this.specs.push(spec);
 };
 
-function Spec(descText, async, timeout) {
+function Spec (descText, async, timeout) {
 	this.desc = descText;
 	this.async = async;
 	this.timeout = timeout;
@@ -81,7 +81,7 @@ Spec.prototype.evaluate = function (cb) {
 	}
 };
 
-function Expectation(v) {
+function Expectation (v) {
 	this.someValue = v;
 }
 
